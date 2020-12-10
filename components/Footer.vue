@@ -2,6 +2,7 @@
   <v-footer
     dark
     padless
+    fluid
   >
     <v-card
       flat
