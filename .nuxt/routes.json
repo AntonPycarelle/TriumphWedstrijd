@@ -1,0 +1,20 @@
+[
+  {
+    "name": "home",
+    "path": "/home",
+    "component": "/Users/antonpycarelle/Documents/Zelfstandige ondeneming/Triumph Winactie/Github/TriumphWedstrijd/pages/home.vue",
+    "chunkName": "pages/home"
+  },
+  {
+    "name": "index copy",
+    "path": "/index%20copy",
+    "component": "/Users/antonpycarelle/Documents/Zelfstandige ondeneming/Triumph Winactie/Github/TriumphWedstrijd/pages/index copy.vue",
+    "chunkName": "pages/index copy"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/antonpycarelle/Documents/Zelfstandige ondeneming/Triumph Winactie/Github/TriumphWedstrijd/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
