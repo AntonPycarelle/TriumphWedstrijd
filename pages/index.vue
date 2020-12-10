@@ -3,10 +3,10 @@
 
 
     <div>
-        <v-parallax dark class="para" src="./bg.png">
-        <Form />
+        <!-- <v-parallax dark class="para" src="./bg.png"> -->
+        <Form class="form"/>
         <Footer />
-        </v-parallax>
+        <!-- </v-parallax> -->
     </div>
 </template>
 
@@ -26,5 +26,10 @@ export default {
 .para{
     background-size: 100%;
 
+}
+
+.form{
+    width: 80%;
+    margin: auto;
 }
 </style>

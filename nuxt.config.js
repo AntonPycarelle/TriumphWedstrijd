@@ -13,8 +13,9 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [ 
-
+  css: [
+    '@/assets/reset.css',
+    '@/assets/overall.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -31,6 +32,7 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    ["nuxt-webfontloader"]
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -38,5 +40,15 @@ export default {
     transpile: [
       "vee-validate/dist/rules"
     ],
-  }
+  },
+
+  webfontloader: {
+    custom: {
+      families: ["Glacial Indifference", "Open Sans"],
+      urls: [
+        "/fonts/fonts.css",
+        "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i"
+      ]
+    }
+  },
 }

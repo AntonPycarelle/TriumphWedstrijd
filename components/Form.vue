@@ -1,20 +1,35 @@
 
 
-<template>
-<div>
+<template >
+<div class="formsection">
 
     <script type="text/javascript">var submitted=false;</script>
     
     <!--Update the URL for thank you page on form submit -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-    onload="if(submitted) {window.location='';}"></iframe> 
+    onload="if(submitted) {
+      let $form = document.querySelector('form');
+      let $thanks = document.querySelector('.thanks')
+      console.log($form);
+      $form.classList.add('hide');
+      $thanks.classList.add('show');
+      }">
+    </iframe> 
 
+    <script type="text/javascript">
+        function validateForm() {
+
+            submitted=true;
+            return true;
+
+        }
+    </script>
 
   <validation-observer
     ref="observer"
     v-slot="{ invalid }"
   >
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciKjkMCMnLViXgw4OMHteg2wQlRaf4dOekvEwZMfxJgHFs0w/formResponse" method="post" target="hidden_iframe" onsubmit="return " >
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciKjkMCMnLViXgw4OMHteg2wQlRaf4dOekvEwZMfxJgHFs0w/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm();" >
         <!-- NAAM -->
       <validation-provider
         v-slot="{ errors }"
@@ -125,61 +140,99 @@
         rules="required"
         name="checkbox"
       >
+
+              <v-container fluid>
+                  
+            <v-radio-group v-model="radios2" row name="entry.1284250062">
+            <!-- <template v-slot:label>
+                <div>Raad jij welke bekende vlaming we op onze Triumph-moto kregen? Doe hieronder een
+gokje en win!</strong></div> -->
+            <!-- </template> -->
+            <div class="radiogrouping" >
+
+
+              <div class="checkboxwrapper">
+                <v-radio value="Hilde De Baerdemaeker" name="entry.1284250062" class="radio">
+                    <template class="centering" v-slot:label>
+                      <div class="centering">
+                        <h2>Hilde De Baerdemaeker</h2>
+                        <img class="checkboximg" src="/hilde.jpg" alt="Hilde De Baerdemaeker">
+                      </div>
+                    </template>
+                </v-radio>
+              </div>
+              
+              <div class="checkboxwrapper">
+             
+                <v-radio value="Maaike Cafmeyer" name="entry.1284250062" class="radio">
+                    <template v-slot:label>
+                    <div class="centering">
+                      <h2>Maaike Cafmeyer</h2>
+                        <img class="checkboximg" src="/maaike.jpg" alt="Maaike Cafmeyer">
+                    </div>
+                    </template>
+                </v-radio>
+              </div>
+
+              <div class="checkboxwrapper">
+                
+                <v-radio value="Ella Leyers" name="entry.1284250062" class="radio">
+                    <template v-slot:label>
+                      <div class="centering">
+                      <h2>Ella Leyers</h2>
+                      <img class="checkboximg" src="/ella.jpeg" alt="Ella Leyers">
+                      </div>
+                    </template>
+                </v-radio>
+              </div>
+
+              <div class="checkboxwrapper">
+                
+                <v-radio value="Leen Dendievel" name="entry.1284250062" class="radio">
+                    <template v-slot:label>
+                      <div class="centering">
+                        <h2>Leen Dendievel</h2>
+                        <img class="checkboximg" src="/leen.png" alt="Leen Dendievel">
+                      </div>
+                    </template>
+                </v-radio>
+              </div>
+
+              <div class="checkboxwrapper">
+                
+                <v-radio value="Justine De Jonckheere" name="entry.1284250062" class="radio">
+                    <template class="centering" v-slot:label>
+                      <div class="centering">
+                        <h2>Justine De Jonckheere</h2>
+                        <img class="checkboximg" src="/justine.jpg" alt="Justine De Jonckheere">
+                      </div>
+                    </template>
+                </v-radio>
+              </div>   
+            </div>  
+            </v-radio-group>
+        </v-container>
+
+      </validation-provider>
+
+      <validation-provider
+        rules="required"
+        name="checkbox"
+      >
         <v-container fluid>
             <v-radio-group v-model="radios" name="entry.196644817">
             <template v-slot:label>
-                <div>Wie denk jij dat de gesmakerde BV is?</strong></div>
+                <div>Nieuwsbrief</strong></div>
             </template>
             <v-radio value="Ja" name="entry.196644817">
                 <template v-slot:label>
-                <div>Ja, ik wens op de hoogte gehouden te worden van acties,
+                <div class="bitjeplekke">Ja, ik wens op de hoogte gehouden te worden van acties,
 wedstrijden en interessant nieuws van Triumph Wevelgem</div>
                 </template>
             </v-radio>
             <v-radio value="Nee" name="entry.196644817">
                 <template v-slot:label>
-                <div>Nee</div>
-                </template>
-            </v-radio>
-            </v-radio-group>
-        </v-container>
-
-      </validation-provider>
-      <validation-provider
-        rules="required"
-        name="checkbox"
-      >
-
-              <v-container fluid>
-                  
-            <v-radio-group v-model="radios2" name="entry.1284250062">
-            <template v-slot:label>
-                <div>Raad jij welke bekende vlaming we op onze Triumph-moto kregen? Doe hieronder een
-gokje en win!</strong></div>
-            </template>
-            <v-radio value="Hilde De Baerdemaeker" name="entry.1284250062">
-                <template v-slot:label>
-                <div>Hilde De Baerdemaeker</div>
-                </template>
-            </v-radio>
-            <v-radio value="Maaike Cafmeyer" name="entry.1284250062">
-                <template v-slot:label>
-                <div>Maaike Cafmeyer</div>
-                </template>
-            </v-radio>
-            <v-radio value="Ella Leyers" name="entry.1284250062">
-                <template v-slot:label>
-                <div>Ella Leyers</div>
-                </template>
-            </v-radio>
-            <v-radio value="Leen Dendievel" name="entry.1284250062">
-                <template v-slot:label>
-                <div>Leen Dendievel</div>
-                </template>
-            </v-radio>
-            <v-radio value="Justine De Jonckheere" name="entry.1284250062">
-                <template v-slot:label>
-                <div>Justine De Jonckheere</div>
+                <div class="bitjeplekke">Nee</div>
                 </template>
             </v-radio>
             </v-radio-group>
@@ -187,22 +240,30 @@ gokje en win!</strong></div>
 
       </validation-provider>
 
-
-      <v-btn
-        class="mr-4"
-        type="submit"
-        :disabled="invalid"
-      >
-        Neem Deel
-      </v-btn>
+      <div class="center">
+        <v-btn
+          class="mr-4"
+          type="submit"
+          :disabled="invalid"
+        >
+          Neem Deel
+        </v-btn>
+      </div>
     </form>
   </validation-observer>
+
+  <div class="thanks">
+    <h1>Bedankt voor Uw Deelname!</h1>
+    <p class="tagline">U krijgt zo een mailtje, waarin U deelname wordt bevestigd!</p>
+  </div>
   </div>
 </template>
 
 <script>
   import { required, digits, email, max, regex } from 'vee-validate/dist/rules'
   import { extend, ValidationObserver, ValidationProvider, setInteractionMode } from 'vee-validate'
+
+
 
   setInteractionMode('eager')
 
@@ -213,7 +274,7 @@ gokje en win!</strong></div>
 
   extend('required', {
     ...required,
-    message: '{_field_} can not be empty',
+    message: '{_field_} mag niet leeg zijn',
   })
 
   extend('max', {
@@ -3121,9 +3182,108 @@ gokje en win!</strong></div>
 </script>
 
 <style scoped>
-.date-color {
-  color: #00B300;
-  font-weight: 900;
+
+.bitjeplekke{
+  margin-left: 1rem;
+}
+
+.mr-4{
+  margin: auto;
+}
+
+.center{
+  text-align: center;
+}
+
+.centering{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.radiogrouping{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.checkboximg{
+  width: 100%;
+  margin: 3% auto;
+  margin-left: 3%;
+  text-align: center;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+    border-radius: .7rem;
+
+}
+
+h2{
+  font-size: 1rem;
+}
+
+.checkboxwrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: .9rem;
+  min-width: 5rem;
+  max-width: 20rem;
+
+  text-align: center;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  border-radius: 1rem;
+  padding: 3% 2%;
+  margin: 1%;
+}
+
+.radio{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
+
+.thanks{
+  /* display: none; */
+  text-align: center;
+}
+
+.tagline{
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+h1{
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+}
+
+.formsection{
+  /* height: 100vh; */
+}
+
+.show{
+  display: inline;
 }
 
 </style>
