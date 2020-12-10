@@ -1,7 +1,7 @@
 <template>
 <div class="header">
             <nav class="navv">
-                <a href="#start" target="_blank" class="nav-item nav">Wedstrijd</a>
+                <a href="#start" class="nav-item nav">Wedstrijd</a>
                 <img src="/favicon.ico" class="logo" alt="logo">
                 <a href="https://www.triumphwevelgem.com/" target="_blank" class="nav-item nav1">Triumph Wevelgem</a>
             </nav>
@@ -32,10 +32,11 @@
 }
 
 .header{
-    background-image: url(../static/bg.png);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), black url(../static/bg.png) center top/cover no-repeat;
+    /* background-image: url(../static/bg.png);
     background-size: cover;   -ms-background-size: cover;   -o-background-size: cover;   -moz-background-size: cover;   -webkit-background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center top; */
     height: 100vh;
     width: 100%;
 }

@@ -5,6 +5,7 @@
     <div>
         <!-- <v-parallax dark class="para" src="./bg.png"> -->
         <Header />
+        <Body />
         <Form class="form"/>
         <Footer />
         <!-- </v-parallax> -->
@@ -15,12 +16,14 @@
 import Form from '@/components/Form';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Body from '@/components/Body';
 
 export default {
     components:{
         Form,
         Footer,
-        Header
+        Header,
+        Body
     },
 }
 </script>

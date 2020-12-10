@@ -95,7 +95,7 @@
                 <template v-slot:activator="{ on, attrs }">
                 <v-text-field
                     v-model="date"
-                    label="Birthday date"
+                    label="Geboorte Datum"
                     prepend-icon="mdi-calendar"
                     readonly
                     v-bind="attrs"
@@ -259,6 +259,9 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
   <div class="thanks">
     <h1>Bedankt voor Uw Deelname!</h1>
     <p class="tagline">U krijgt zo een mailtje, waarin U deelname wordt bevestigd!</p>
+    <p class="tagline"> <b> Bekendmaking BV: zaterdag 23 januari 2021 </b></p>
+    <p class="tagline"> <b> Bekendmaking winnaar: zondag 24 januari 2021 </b></p>
+
   </div>
   </div>
 </template>
@@ -3212,7 +3215,7 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 
 }
 
@@ -3250,12 +3253,12 @@ h2{
   letter-spacing: .2rem;
   font-size: .9rem;
   min-width: 5rem;
-  max-width: 20rem;
+  max-width: 8rem;
 
   text-align: center;
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   border-radius: 1rem;
-  padding: 3% 2%;
+  /* padding: 3% 2%; */
   margin: 1%;
 }
 
@@ -3271,7 +3274,7 @@ h2{
 }
 
 .thanks{
-  /* display: none; */
+  display: none;
   text-align: center;
 }
 

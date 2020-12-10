@@ -1,4 +1,10 @@
 {
+  "Body": {
+    "description": "Auto imported from components/Body.vue"
+  },
+  "LazyBody": {
+    "description": "Auto imported from components/Body.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },
