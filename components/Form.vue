@@ -30,6 +30,10 @@
     v-slot="{ invalid }"
   >
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciKjkMCMnLViXgw4OMHteg2wQlRaf4dOekvEwZMfxJgHFs0w/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm();" >
+        <h1>Doe hieronder een gokje en win!</h1>
+        <p class="tagline">Raad jij welke bekende vlaming we op onze Triumph-moto kregen?</p>
+
+        
         <!-- NAAM -->
       <validation-provider
         v-slot="{ errors }"
@@ -3184,7 +3188,7 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
 <style scoped>
 
 .bitjeplekke{
-  margin-left: 1rem;
+  margin-left: .3rem;
 }
 
 .mr-4{
@@ -3224,7 +3228,12 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
   -webkit-user-select: none;
   -ms-user-select: none;
     border-radius: .7rem;
+  transition: .3s;
+}
 
+.checkboximg:hover {
+  transition: .3s;
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 h2{
@@ -3270,15 +3279,19 @@ h2{
   font-family: "Glacial Indifference";
   text-transform: uppercase;
   letter-spacing: .3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 h1{
   font-family: "Glacial Indifference";
   text-transform: uppercase;
-  letter-spacing: .6rem;
+  letter-spacing: .4rem;
+  text-align: center;
 }
 
 .formsection{
+  margin: 3rem auto;
   /* height: 100vh; */
 }
 
