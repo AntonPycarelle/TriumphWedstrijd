@@ -35,4 +35,11 @@ export default {
     width: 70%;
     margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .form{
+        width: 90%;
+        margin: auto;
+    }
+}
 </style>

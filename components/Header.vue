@@ -10,7 +10,7 @@
               src="./bg.png"
               contain
             >
-            <h1>Kaas</h1>
+
             
             </v-img>
 </div>
@@ -75,6 +75,12 @@ padding-left: 1rem }
 .nav-item:hover{
     letter-spacing: .25rem;
     transition: letter-spacing .3s;
+}
+
+@media only screen and (max-width: 600px) {
+ .logo{
+     width: 5rem;
+ }
 }
 
 </style>

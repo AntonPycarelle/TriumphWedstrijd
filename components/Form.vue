@@ -41,10 +41,10 @@
         rules="required|max:25"
       >
         <v-text-field
-          v-model="name"
+          v-model="naam"
           :counter="25"
           :error-messages="errors"
-          label="Name"
+          label="Naam"
           required name="entry.361348176"
         ></v-text-field>
       </validation-provider>
@@ -307,7 +307,7 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
         radioGroup: 1,
       date: null,
       menu: false,
-      name: '',
+      naam: '',
       voornaam: '',
       phoneNumber: '',
       email: '',
