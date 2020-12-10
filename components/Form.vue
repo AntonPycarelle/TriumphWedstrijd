@@ -1,7 +1,7 @@
 
 
 <template >
-<div class="formsection">
+<div id="start" class="formsection">
 
     <script type="text/javascript">var submitted=false;</script>
     
@@ -184,7 +184,7 @@ gokje en win!</strong></div> -->
                     <template v-slot:label>
                       <div class="centering">
                       <h2>Ella Leyers</h2>
-                      <img class="checkboximg" src="/ella.jpeg" alt="Ella Leyers">
+                      <img class="checkboximg" src="/ella.jpg" alt="Ella Leyers">
                       </div>
                     </template>
                 </v-radio>

@@ -1,15 +1,20 @@
 <template>
-<div>
+<div class="header">
             <nav class="navv">
-                <a href="/" target="_blank" class="nav-item nav">Wedstrijd</a>
-                <img src="/logo.ico" class="logo" alt="logo">
+                <a href="#start" target="_blank" class="nav-item nav">Wedstrijd</a>
+                <img src="/favicon.ico" class="logo" alt="logo">
                 <a href="https://www.triumphwevelgem.com/" target="_blank" class="nav-item nav1">Triumph Wevelgem</a>
             </nav>
 
-            <v-img
+            <!-- <v-img
               src="./bg.png"
               contain
-            >
+            > -->
+
+            <div class="height">
+                <h3 class="white"><span class=""> Welke BV </span><br><span class=""> is onze </span><br> Gemaskerde Motard?</h3>
+                <p class="taglinee">Doe hieronder je gok en win <b>1.000 euro!</b></p>
+            </div>
 
             
             </v-img>
@@ -17,10 +22,49 @@
 </template>
 
 <style >
+
+.grooter{
+    font-size: 3rem;
+}
+
+.taglinee{
+    color: white;
+}
+
+.header{
+    background-image: url(../static/bg.png);
+    background-size: cover;   -ms-background-size: cover;   -o-background-size: cover;   -moz-background-size: cover;   -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    width: 100%;
+}
+
 .para{
       filter: blur(2px);
   -webkit-filter: blur(2px);
 }
+
+.height{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white{
+    color:white;
+    font-family: "Glacial Indifference";
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 15rem;
+    font-size: 2.3rem;
+    margin: 1rem;
+    }
 
 .nav-item{
     font-family: "Glacial Indifference";
@@ -50,7 +94,6 @@ h1{
   grid-template-areas:
     ". nav logo nav1 .";
     width: 100%;
-    background-color: black;
       justify-items: center;
   align-items: center;
 }
