@@ -32,7 +32,7 @@ export default {
 }
 
 .form{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 </style>
