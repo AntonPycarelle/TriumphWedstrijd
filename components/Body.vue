@@ -1,5 +1,5 @@
 <template>
-<div class="body">
+<div class="body" id="start">
     <h6>Geen motosalon dit jaar?</h6>
     <p class="bodyteskt">Geen vrees! Triumph brengt de saloncondities naar
 Wevelgem! Op zaterdag 23 en zondag 24 januari ontdek je onze beste promoties én ga
@@ -28,5 +28,12 @@ je misschien wel naar huis met 1.000 euro motogear!</p>
         text-transform: uppercase;
         font-size: 1.8rem;
         margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .bodyteskt{
+        width: 90%;
+    }
+
     }
 </style>

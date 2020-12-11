@@ -1,4 +1,5 @@
 <template>
+<div class="footermid">
   <v-footer
     dark
     padless
@@ -6,6 +7,8 @@
   >
     <v-card
       flat
+
+        fluid
       tile
       class="indigo lighten-1 white--text text-center"
     >
@@ -25,19 +28,20 @@
           <img class="centerrimg" src="/logoo.png" alt="triumph logo">
 
       </div>
-      <v-card-text class="white--text pt-0"><div class="centerr">
+      <v-card-text     fluid class="white--text pt-0"><div class="centerr">
 
 Triumph brengt saloncondities naar Wevelgem op zaterdag 23 en zondag 24 januari.
 Bezoek onze showroom en ontdek misschien wel jouw nieuwe moto!        <br> <a class="regels" target="_blank" href="">Wedstrijdregelement</a>
   </div>   </v-card-text>
 
-      <v-divider></v-divider>
+      <v-divider     fluid ></v-divider>
 
-      <v-card-text class="white--text">
+      <v-card-text     fluid class="white--text">
         {{ new Date().getFullYear() }} — <strong>Triumph Wevelgem</strong>
       </v-card-text>
     </v-card>
   </v-footer>
+  </div>
 </template>
 
 <script>
@@ -68,6 +72,13 @@ Bezoek onze showroom en ontdek misschien wel jouw nieuwe moto!        <br> <a cl
 
 .imgwrapper{
     width: 100%;
+}
+
+.footermid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
 }
 
 .centerrimg{

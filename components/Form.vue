@@ -1,7 +1,7 @@
 
 
 <template >
-<div id="start" class="formsection">
+<div class="formsection">
 
     <script type="text/javascript">var submitted=false;</script>
     
@@ -259,8 +259,8 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
   <div class="thanks">
     <h1>Bedankt voor Uw Deelname!</h1>
     <p class="tagline">U krijgt zo een mailtje, waarin U deelname wordt bevestigd!</p>
-    <p class="tagline"> <b> Bekendmaking BV: zaterdag 23 januari 2021 </b></p>
-    <p class="tagline"> <b> Bekendmaking winnaar: zondag 24 januari 2021 </b></p>
+    <p class="tagline"> <b> Bekendmaking BV:</b> <br>  zaterdag 23 januari 2021 </b></p>
+    <p class="tagline"> <b> Bekendmaking winnaar:</b> <br> zondag 24 januari 2021 </p>
 
   </div>
   </div>
@@ -3215,7 +3215,7 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
 }
 
@@ -3281,9 +3281,10 @@ h2{
 .tagline{
   font-family: "Glacial Indifference";
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: .2rem;
   text-align: center;
   margin-bottom: 3rem;
+  line-height: 1.4rem;
 }
 
 h1{
