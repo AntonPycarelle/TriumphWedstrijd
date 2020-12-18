@@ -4,6 +4,12 @@
     <p class="bodyteskt">Geen vrees! Triumph brengt de saloncondities naar
 Wevelgem! Op zaterdag 23 en zondag 24 januari ontdek je onze beste promoties én ga
 je misschien wel naar huis met 1.000 euro motogear!</p>
+
+
+    <div class="videowrapper">
+        <iframe class="iframevid" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 </div>
 </template>
 
@@ -17,9 +23,22 @@ je misschien wel naar huis met 1.000 euro motogear!</p>
         margin: auto;
         text-align: center;
         font-family: "Glacial Indifference";
-        text-transform: capitalize;
         letter-spacing: .1rem;
         line-height: 1.4rem;
+    }
+
+    .iframevid{
+        height: 21rem;
+        width: 48rem;
+    }
+
+    .videowrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+
     }
 
     h6{

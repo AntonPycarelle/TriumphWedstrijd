@@ -29,8 +29,8 @@
     ref="observer"
     v-slot="{ invalid }"
   >
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciKjkMCMnLViXgw4OMHteg2wQlRaf4dOekvEwZMfxJgHFs0w/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm();" >
-        <h1>Doe hieronder een gokje en win!</h1>
+    <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeViNKTKcgEzIhNMlqAkR_rMCcluuyTkG7nyWKa2rV6u0MWUw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm();" >
+        <h1>MAAK HIERONDER JE KEUZE EN WIN</h1>
         <p class="tagline">Raad jij welke bekende vlaming we op onze Triumph-moto kregen?</p>
 
         
@@ -45,7 +45,7 @@
           :counter="25"
           :error-messages="errors"
           label="Naam"
-          required name="entry.361348176"
+          required name="entry.651180894"
         ></v-text-field>
       </validation-provider>
 
@@ -61,7 +61,7 @@
           :counter="25"
           :error-messages="errors"
           label="Voornaam"
-          required name="entry.1031056222"
+          required name="entry.1592533683"
           
         ></v-text-field>
       </validation-provider>
@@ -77,7 +77,7 @@
           v-model="email"
           :error-messages="errors"
           label="E-mail"
-          required name="entry.929403391"
+          required name="entry.1196801951"
         ></v-text-field>
       </validation-provider>
 
@@ -101,7 +101,7 @@
                     v-bind="attrs"
                     v-on="on"
                     color="green lighten-1"
-                    name="entry.931986751"
+                    name="entry.879839435"
                 ></v-text-field>
                 </template>
                 <v-date-picker
@@ -135,7 +135,7 @@
             hide-no-data
             hide-details
             label="Gemeente"
-             name="entry.1977830378"
+             name="entry.388907075"
 
         ></v-autocomplete>
         </validation-provider> 
@@ -147,7 +147,7 @@
 
               <v-container fluid>
                   
-            <v-radio-group v-model="radios2" row name="entry.1284250062">
+            <v-radio-group v-model="radios2" row name="entry.209881354">
             <!-- <template v-slot:label>
                 <div>Raad jij welke bekende vlaming we op onze Triumph-moto kregen? Doe hieronder een
 gokje en win!</strong></div> -->
@@ -156,7 +156,7 @@ gokje en win!</strong></div> -->
 
 
               <div class="checkboxwrapper">
-                <v-radio value="Hilde De Baerdemaeker" name="entry.1284250062" class="radio">
+                <v-radio value="Hilde De Baerdemaeker" name="entry.209881354" class="radio">
                     <template class="centering" v-slot:label>
                       <div class="centering">
                         <h2>Hilde De Baerdemaeker</h2>
@@ -168,7 +168,7 @@ gokje en win!</strong></div> -->
               
               <div class="checkboxwrapper">
              
-                <v-radio value="Maaike Cafmeyer" name="entry.1284250062" class="radio">
+                <v-radio value="Maaike Cafmeyer" name="entry.209881354" class="radio">
                     <template v-slot:label>
                     <div class="centering">
                       <h2>Maaike Cafmeyer</h2>
@@ -180,7 +180,7 @@ gokje en win!</strong></div> -->
 
               <div class="checkboxwrapper">
                 
-                <v-radio value="Ella Leyers" name="entry.1284250062" class="radio">
+                <v-radio value="Ella Leyers" name="entry.209881354" class="radio">
                     <template v-slot:label>
                       <div class="centering">
                       <h2>Ella Leyers</h2>
@@ -192,7 +192,7 @@ gokje en win!</strong></div> -->
 
               <div class="checkboxwrapper">
                 
-                <v-radio value="Leen Dendievel" name="entry.1284250062" class="radio">
+                <v-radio value="Leen Dendievel" name="entry.209881354" class="radio">
                     <template v-slot:label>
                       <div class="centering">
                         <h2>Leen Dendievel</h2>
@@ -204,7 +204,7 @@ gokje en win!</strong></div> -->
 
               <div class="checkboxwrapper">
                 
-                <v-radio value="Justine De Jonckheere" name="entry.1284250062" class="radio">
+                <v-radio value="Justine De Jonckheere" name="entry.209881354" class="radio">
                     <template class="centering" v-slot:label>
                       <div class="centering">
                         <h2>Justine De Jonckheere</h2>
@@ -224,17 +224,17 @@ gokje en win!</strong></div> -->
         name="checkbox"
       >
         <v-container fluid>
-            <v-radio-group v-model="radios" name="entry.196644817">
+            <v-radio-group v-model="radios" name="entry.875192215">
             <template v-slot:label>
                 <div>Nieuwsbrief</strong></div>
             </template>
-            <v-radio value="Ja" name="entry.196644817">
+            <v-radio value="Ja" name="entry.875192215">
                 <template v-slot:label>
                 <div class="bitjeplekke">Ja, ik wens op de hoogte gehouden te worden van acties,
 wedstrijden en interessant nieuws van Triumph Wevelgem</div>
                 </template>
             </v-radio>
-            <v-radio value="Nee" name="entry.196644817">
+            <v-radio value="Nee" name="entry.875192215">
                 <template v-slot:label>
                 <div class="bitjeplekke">Nee</div>
                 </template>
@@ -259,8 +259,8 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
   <div class="thanks">
     <h1>Bedankt voor Uw Deelname!</h1>
     <p class="tagline">U krijgt zo een mailtje, waarin U deelname wordt bevestigd!</p>
-    <p class="tagline"> <b> Bekendmaking BV:</b> <br>  zaterdag 23 januari 2021 </b></p>
-    <p class="tagline"> <b> Bekendmaking winnaar:</b> <br> zondag 24 januari 2021 </p>
+    <!-- <p class="tagline"> <b> Bekendmaking BV:</b> <br>  zaterdag 23 januari 2021 </b></p>
+    <p class="tagline"> <b> Bekendmaking winnaar:</b> <br> zondag 24 januari 2021 </p> -->
 
   </div>
   </div>

@@ -12,7 +12,7 @@
             > -->
 
             <div class="height">
-                <h3 class="white"><span class=""> Welke BV </span><br><span class=""> is onze </span><br> Gemaskerde Motard?</h3>
+                <h3 class="white"><span class=""> Welke Bekende Vlaming </span><br><span class=""> is onze </span><br> Gemaskerde Motard?</h3>
                 <p class="taglinee">Doe hieronder je gok en win <b>1.000 euro!</b></p>
             </div>
 
@@ -32,7 +32,7 @@
 }
 
 .header{
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), black url(../static/bg.png) center top/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 100%), black url(../static/bg.png) center top/cover no-repeat;
     /* background-image: url(../static/bg.png);
     background-size: cover;   -ms-background-size: cover;   -o-background-size: cover;   -moz-background-size: cover;   -webkit-background-size: cover;
     background-repeat: no-repeat;
