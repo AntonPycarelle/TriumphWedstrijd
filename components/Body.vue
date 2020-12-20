@@ -7,7 +7,7 @@ je misschien wel naar huis met 1.000 euro motogear!</p>
 
 
     <div class="videowrapper">
-        <iframe class="iframevid" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="iframevid" src="https://www.youtube.com/embed/izgKpi4wncM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 </div>
@@ -28,7 +28,7 @@ je misschien wel naar huis met 1.000 euro motogear!</p>
     }
 
     .iframevid{
-        height: 21rem;
+        height: 25rem;
         width: 48rem;
     }
 
