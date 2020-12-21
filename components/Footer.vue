@@ -31,7 +31,7 @@
       <v-card-text     fluid class="white--text pt-0"><div class="centerr">
 
 Triumph brengt saloncondities naar Wevelgem op zaterdag 23 en zondag 24 januari.
-Bezoek onze showroom en ontdek misschien wel jouw nieuwe moto!        <br> <a class="regels" target="_blank" href="">Wedstrijdregelement</a>
+Bezoek onze showroom en ontdek misschien wel jouw nieuwe moto!        <br> <a class="regels" target="_blank" href="/triumph_wedstrijdreglement.pdf">Wedstrijdregelement</a>
   </div>   </v-card-text>
 
       <v-divider     fluid ></v-divider>
