@@ -54,6 +54,22 @@
       <validation-provider
         v-slot="{ errors }"
         name="Voornaam"
+        rules="required"
+      >
+        <v-text-field
+          v-model="voornaam"
+          :counter="25"
+          :error-messages="errors"
+          label="Voornaam"
+          required name="entry.1592533683"
+        ></v-text-field>
+      </validation-provider>
+
+
+
+      <!-- <validation-provider
+        v-slot="{ errors }"
+        name="voornaam"
         rules="required|max:25"
       >
         <v-text-field
@@ -62,16 +78,17 @@
           :error-messages="errors"
           label="Voornaam"
           required name="entry.1592533683"
+          rules="required|max:25"
           
         ></v-text-field>
-      </validation-provider>
+      </validation-provider> -->
 
         <!-- EMAIL -->
 
-      <validation-provider
+      <!-- <validation-provider
         v-slot="{ errors }"
         name="email"
-        rules="required|email"
+        rules="required"
       >
         <v-text-field
           v-model="email"
@@ -79,7 +96,20 @@
           label="E-mail"
           required name="entry.1196801951"
         ></v-text-field>
-      </validation-provider>
+      </validation-provider> -->
+      <validation-provider
+            v-slot="{ errors }"
+            name="Voornaam"
+            rules="required"
+          >
+          <v-text-field
+          label="E-mail"
+          v-model="email"
+          :rules="emailRules"
+          required name="entry.1196801951"
+
+        ></v-text-field>
+    </validation-provider>
 
         <!-- Geboorte -->
         <validation-provider data-app>
@@ -92,7 +122,19 @@
                 min-width="290px"
                 color="green lighten-1"
             >
-                <template v-slot:activator="{ on, attrs }">
+
+
+               <template v-slot:activator="{ on, attrs }">
+
+
+      <validation-provider
+        v-slot="{ errors }"
+        name="email"
+        rules="required"
+      >
+
+
+ 
                 <v-text-field
                     v-model="date"
                     label="Geboorte Datum"
@@ -103,7 +145,14 @@
                     color="green lighten-1"
                     name="entry.879839435"
                 ></v-text-field>
+
+
+                </validation-provider>
+
                 </template>
+
+
+
                 <v-date-picker
                 ref="picker"
                 v-model="date"
@@ -221,7 +270,7 @@ gokje en win!</strong></div> -->
 
       <validation-provider
         rules="required"
-        name="checkbox"
+        name="required|checkbox"
       >
         <v-container fluid>
             <v-radio-group v-model="radios" name="entry.875192215">
@@ -3147,6 +3196,11 @@ wedstrijden en interessant nieuws van Triumph Wevelgem</div>
    '2070 ZWIJNDRECHT '
         ],
       checkbox: null,
+      email: '',
+      emailRules: [ 
+        v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+      ]
+      
     }),
 
     watch: {
