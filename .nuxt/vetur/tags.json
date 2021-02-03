@@ -1,21 +1,9 @@
 {
-  "Body": {
-    "description": "Auto imported from components/Body.vue"
-  },
-  "LazyBody": {
-    "description": "Auto imported from components/Body.vue"
-  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },
   "LazyFooter": {
     "description": "Auto imported from components/Footer.vue"
-  },
-  "Form": {
-    "description": "Auto imported from components/Form.vue"
-  },
-  "LazyForm": {
-    "description": "Auto imported from components/Form.vue"
   },
   "Header": {
     "description": "Auto imported from components/Header.vue"
